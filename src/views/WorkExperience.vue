@@ -16,7 +16,7 @@
               >
                 fas fa-laptop-code
               </v-icon>
-              <h2 class="display-1 white--text font-weight-light">Software Developer <span class="years">(2017 - ...)</span></h2>
+              <h2 class="display-1 white--text font-weight-light">Software Developer <span class="years">(2017 - present)</span></h2>
             </v-card-title>
             <v-container>
               <v-row>

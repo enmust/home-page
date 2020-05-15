@@ -1,6 +1,12 @@
 <template>
   <v-content>
     <v-container>
+      <v-alert class="my-2" type="info" border="left" dismissible>
+        This list contains only live projects. I have also worked on and made
+        quite a lot of smaller test applications mainly to play around with
+        different technologies.
+      </v-alert>
+
       <v-row>
         <v-col
           v-for="card in cards"
@@ -78,13 +84,31 @@ export default {
     animateCardTitles: false,
     cards: [
       {
+        title: "TURBA",
+        src: require("@/assets/cardBackgrounds/turvas.jpg"),
+        url: "https://turvas.geoloogia.info",
+        flex: 6,
+        showInfo: false,
+        description:
+          "An application that thoroughly introduces Estonian peat data."
+      },
+      {
+        title: "GeoCASe-prototype",
+        src: require("@/assets/cardBackgrounds/geocasePrototype.jpg"),
+        url: "http://geocase.geocollections.info",
+        flex: 6,
+        showInfo: false,
+        description:
+          "A small prototype made to showcase some features and functionalty which would already surpass the existing application http://www.geocase.eu/. Whole project which will include new Website and API is set to start on the summer of 2020."
+      },
+      {
         title: "SARV·DOI",
         src: require("@/assets/cardBackgrounds/sarvDoi.jpg"),
         url: "https://doi.geocollections.info",
         flex: 12,
         showInfo: false,
         description:
-          "Application for showing published and unpublished DOIs in Geoscience Data Repository."
+          "An application for showing published and unpublished DOIs in Geoscience Data Repository."
       },
       {
         title: "SARV Data Management",
@@ -93,7 +117,7 @@ export default {
         flex: 7,
         showInfo: false,
         description:
-          "Application made for managing geocollections-related data in Estonia. Various dedicated websites use information which is created and edited here."
+          "An application made for managing geocollections-related data in Estonia. Various dedicated websites use information which is created and edited here."
       },
       {
         title: "Chuck Norris Facts (react)",
@@ -102,7 +126,7 @@ export default {
         flex: 5,
         showInfo: false,
         description:
-          "Small app to show Chuck Norris jokes. I made it to try React and also see differences between Vue and React."
+          "A small app made in react.js framework to show Chuck Norris jokes. I made it to try React and also see differences between Vue and React."
       },
       {
         title: "Chuck Norris Facts (vue)",
@@ -111,7 +135,7 @@ export default {
         flex: 12,
         showInfo: false,
         description:
-          "Small app to show Chuck Norris jokes. I made it to see differences between Vue and React."
+          "A small app made in vue.js framework to show Chuck Norris jokes. I made it to see differences between Vue and React."
       },
       {
         title: "Ready Steady Go",
